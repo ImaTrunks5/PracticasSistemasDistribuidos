@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tienda con Microservicios</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Tienda con Microservicios</h1>
+
+  <section class="form-section">
+    <h2>Agregar Producto</h2>
+    <input id="name" type="text" placeholder="Nombre del producto">
+    <input id="price" type="number" placeholder="Precio">
+    <button onclick="addProduct()">Agregar</button>
+  </section>
+
+  <section class="form-section">
+    <h2>Agregar Reseña</h2>
+    <input id="productId" type="number" placeholder="ID del producto">
+    <input id="comment" type="text" placeholder="Comentario">
+    <input id="rating" type="number" placeholder="Calificación (1-5)">
+    <button onclick="addReview()">Agregar</button>
+  </section>
+
+  <h2>Productos</h2>
+  <div id="products"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
