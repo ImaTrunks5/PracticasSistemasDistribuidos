@@ -1,5 +1,5 @@
-const PRODUCT_URL = 'http://localhost:3001/products';
-const REVIEW_URL = 'http://localhost:3002/reviews';
+const PRODUCT_URL = 'https://micro-productos-923500210820.us-south1.run.app/products';
+const REVIEW_URL = 'https://micro-reviews-923500210820.us-south1.run.app/reviews';
 
 async function loadProducts() {
   const res = await fetch(PRODUCT_URL);
