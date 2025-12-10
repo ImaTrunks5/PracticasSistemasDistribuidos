@@ -3,7 +3,7 @@ const express = require('express');
 const cors = require('cors');
 const axios = require('axios');
 const app = express();
-
+const PORT = process.env.PORT || 3002;
 
 app.use(cors());
 
@@ -58,4 +58,4 @@ app.post('/reviews', (req, res) => {
   res.status(201).json(newReview);
 });
 
-app.listen(3002, () => console.log('Servicio de reseñas corriendo en puerto 3002'));
+app.listen(PORT, () => console.log('Servicio de reseñas corriendo en puerto 3002'));

@@ -3,6 +3,7 @@ const express = require('express');
 const cors = require('cors');
 const axios = require('axios');
 const app = express();
+const PORT = process.env.PORT || 3001;
 
 app.use(cors());
 
@@ -31,4 +32,4 @@ app.post('/products', (req, res) => {
   res.status(201).json(newProduct);
 });
 
-app.listen(3001, () => console.log(' Servicio de productos corriendo en puerto 3001'));
+app.listen(PORT, () => console.log(' Servicio de productos corriendo en puerto 3001'));
